@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
-"""Ensambla index.html a partir de layout/ y sections/.
-
-Uso:  python3 build.py
-Edita las partes y vuelve a ejecutarlo. index.html es el archivo que se publica.
-"""
 from pathlib import Path
 
 ROOT = Path(__file__).parent
