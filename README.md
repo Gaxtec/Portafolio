@@ -11,8 +11,6 @@ css/  js/  img/
 backend/            API del formulario de contacto (FastAPI)
 ```
 
-**Flujo de trabajo:** edita el archivo de la sección que quieras → `python3 build.py` → listo.
-
 ## JavaScript
 
 | Archivo | Qué hace |
