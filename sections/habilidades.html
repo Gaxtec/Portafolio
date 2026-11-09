@@ -1,0 +1,104 @@
+        <!-- Habilidades -->
+        <section id="habilidades" class="py-24 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-xs font-mono font-semibold tracking-wider text-emerald-400 uppercase">Habilidades Técnicas</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Tech Stack & Herramientas</p>
+                    <div class="w-16 h-1 bg-gradient-to-r from-emerald-500 to-cyan-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <!-- Filtros -->
+                <div class="flex flex-wrap justify-center gap-2 mb-12">
+                    <button type="button" aria-pressed="true" data-filter="all" class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-emerald-500 text-slate-950 transition-all shadow-md">
+                        Todos
+                    </button>
+                    <button type="button" aria-pressed="false" data-filter="backend" class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold glass-card text-slate-300 hover:text-white transition-all">
+                        Backend & Lenguajes
+                    </button>
+                    <button type="button" aria-pressed="false" data-filter="ai" class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold glass-card text-slate-300 hover:text-white transition-all">
+                        IA & Visión
+                    </button>
+                    <button type="button" aria-pressed="false" data-filter="db" class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold glass-card text-slate-300 hover:text-white transition-all">
+                        Bases de Datos
+                    </button>
+                    <button type="button" aria-pressed="false" data-filter="devops" class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold glass-card text-slate-300 hover:text-white transition-all">
+                        DevOps & Tools
+                    </button>
+                </div>
+
+                <!-- Lista de habilidades -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4" id="skills-grid">
+                    <div data-category="backend" class="skill-card glass-card p-4 rounded-xl border border-slate-800 text-center hover:border-emerald-500/50 transition-all">
+                        <i aria-hidden="true" class="fa-brands fa-python text-3xl text-emerald-400 mb-2"></i>
+                        <div class="font-bold text-white text-sm">Python</div>
+                        <div class="text-[10px] text-slate-400 font-mono mt-1">Lenguaje Principal</div>
+                    </div>
+
+                    <div data-category="backend" class="skill-card glass-card p-4 rounded-xl border border-slate-800 text-center hover:border-emerald-500/50 transition-all">
+                        <i aria-hidden="true" class="fa-solid fa-bolt text-3xl text-emerald-400 mb-2"></i>
+                        <div class="font-bold text-white text-sm">FastAPI</div>
+                        <div class="text-[10px] text-slate-400 font-mono mt-1">APIs / Microservicios</div>
+                    </div>
+
+                    <div data-category="backend" class="skill-card glass-card p-4 rounded-xl border border-slate-800 text-center hover:border-emerald-500/50 transition-all">
+                        <i aria-hidden="true" class="fa-solid fa-code text-3xl text-cyan-400 mb-2"></i>
+                        <div class="font-bold text-white text-sm">C / C++</div>
+                        <div class="text-[10px] text-slate-400 font-mono mt-1">Lógica de Bajo Nivel</div>
+                    </div>
+
+                    <div data-category="ai" class="skill-card glass-card p-4 rounded-xl border border-slate-800 text-center hover:border-cyan-500/50 transition-all">
+                        <i aria-hidden="true" class="fa-solid fa-eye text-3xl text-cyan-400 mb-2"></i>
+                        <div class="font-bold text-white text-sm">OpenCV</div>
+                        <div class="text-[10px] text-slate-400 font-mono mt-1">Procesamiento Imágenes</div>
+                    </div>
+
+                    <div data-category="ai" class="skill-card glass-card p-4 rounded-xl border border-slate-800 text-center hover:border-cyan-500/50 transition-all">
+                        <i aria-hidden="true" class="fa-solid fa-brain text-3xl text-violet-400 mb-2"></i>
+                        <div class="font-bold text-white text-sm">PyTorch</div>
+                        <div class="text-[10px] text-slate-400 font-mono mt-1">CNN / Deep Learning</div>
+                    </div>
+
+                    <div data-category="db" class="skill-card glass-card p-4 rounded-xl border border-slate-800 text-center hover:border-violet-500/50 transition-all">
+                        <i aria-hidden="true" class="fa-solid fa-database text-3xl text-violet-400 mb-2"></i>
+                        <div class="font-bold text-white text-sm">PostgreSQL</div>
+                        <div class="text-[10px] text-slate-400 font-mono mt-1">Base Relacional</div>
+                    </div>
+
+                    <div data-category="db" class="skill-card glass-card p-4 rounded-xl border border-slate-800 text-center hover:border-violet-500/50 transition-all">
+                        <i aria-hidden="true" class="fa-solid fa-server text-3xl text-emerald-400 mb-2"></i>
+                        <div class="font-bold text-white text-sm">MySQL</div>
+                        <div class="text-[10px] text-slate-400 font-mono mt-1">BD & Normalización</div>
+                    </div>
+
+                    <div data-category="devops" class="skill-card glass-card p-4 rounded-xl border border-slate-800 text-center hover:border-emerald-500/50 transition-all">
+                        <i aria-hidden="true" class="fa-brands fa-docker text-3xl text-cyan-400 mb-2"></i>
+                        <div class="font-bold text-white text-sm">Docker</div>
+                        <div class="text-[10px] text-slate-400 font-mono mt-1">Contenedores</div>
+                    </div>
+
+                    <div data-category="devops" class="skill-card glass-card p-4 rounded-xl border border-slate-800 text-center hover:border-emerald-500/50 transition-all">
+                        <i aria-hidden="true" class="fa-brands fa-github text-3xl text-white mb-2"></i>
+                        <div class="font-bold text-white text-sm">Git / GitHub</div>
+                        <div class="text-[10px] text-slate-400 font-mono mt-1">Control de Versiones</div>
+                    </div>
+
+                    <div data-category="devops" class="skill-card glass-card p-4 rounded-xl border border-slate-800 text-center hover:border-emerald-500/50 transition-all">
+                        <i aria-hidden="true" class="fa-brands fa-linux text-3xl text-amber-400 mb-2"></i>
+                        <div class="font-bold text-white text-sm">Linux / Bash</div>
+                        <div class="text-[10px] text-slate-400 font-mono mt-1">Administración Server</div>
+                    </div>
+
+                    <div data-category="backend" class="skill-card glass-card p-4 rounded-xl border border-slate-800 text-center hover:border-emerald-500/50 transition-all">
+                        <i aria-hidden="true" class="fa-solid fa-layer-group text-3xl text-emerald-400 mb-2"></i>
+                        <div class="font-bold text-white text-sm">REST APIs</div>
+                        <div class="text-[10px] text-slate-400 font-mono mt-1">Diseño de Middleware</div>
+                    </div>
+
+                    <div data-category="db" class="skill-card glass-card p-4 rounded-xl border border-slate-800 text-center hover:border-violet-500/50 transition-all">
+                        <i aria-hidden="true" class="fa-solid fa-sitemap text-3xl text-violet-400 mb-2"></i>
+                        <div class="font-bold text-white text-sm">2FN / 3FN</div>
+                        <div class="text-[10px] text-slate-400 font-mono mt-1">Normalización de Datos</div>
+                    </div>
+                </div>
+            </div>
+        </section>

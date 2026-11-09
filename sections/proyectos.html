@@ -1,0 +1,158 @@
+        <!-- Proyectos -->
+        <section id="proyectos" class="py-24 bg-slate-950/60 relative border-t border-slate-800/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs font-mono font-semibold tracking-wider text-emerald-400 uppercase">Portafolio</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Proyectos Destacados</p>
+                    <p class="text-slate-400 text-sm mt-3">Casos de estudio, investigación aplicada y desarrollos backend.</p>
+                    <div class="w-16 h-1 bg-gradient-to-r from-emerald-500 to-cyan-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                    <!-- Proyecto principal -->
+                    <div class="lg:col-span-12 glass-card rounded-3xl p-8 sm:p-10 border-2 border-emerald-500/30 hover:border-emerald-500/60 transition-all shadow-xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-gradient-to-l from-emerald-500/20 to-transparent w-full h-full pointer-events-none"></div>
+
+                        <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+                            <div class="flex items-center space-x-3">
+                                <span class="px-3.5 py-1.5 rounded-full bg-emerald-500 text-slate-950 font-extrabold text-xs tracking-wider uppercase">
+                                    ★ Proyecto de Tesis
+                                </span>
+                                <span class="text-xs font-mono text-cyan-400 bg-cyan-500/10 px-3 py-1.5 rounded-full border border-cyan-500/20">
+                                    Visión Artificial & Deep Learning
+                                </span>
+                            </div>
+                            <span class="text-xs font-mono text-slate-400">
+                                <i aria-hidden="true" class="fa-regular fa-calendar me-1"></i>Investigación & Desarrollo
+                            </span>
+                        </div>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                            <div class="lg:col-span-7 space-y-4">
+                                <h3 class="text-2xl sm:text-3xl font-bold text-white leading-tight">
+                                    Detector Automático de Desgaste y Defectos en Neumáticos
+                                </h3>
+
+                                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                                    Sistema integral de inspección automatizada para la clasificación de desgaste en neumáticos mediante redes neuronales convolucionales (<strong>DenseNet121 / VGG19</strong>). Los resultados de inferencia son servidos a través de una API REST de alta velocidad desarrollada con <strong>FastAPI</strong> y <strong>OpenCV</strong>.
+                                </p>
+
+                                <!-- Tecnologías -->
+                                <div class="flex flex-wrap gap-2 pt-2">
+                                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-800 text-emerald-300 border border-slate-700">Python</span>
+                                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-800 text-emerald-300 border border-slate-700">FastAPI</span>
+                                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-800 text-cyan-300 border border-slate-700">PyTorch / TensorFlow</span>
+                                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-800 text-cyan-300 border border-slate-700">OpenCV</span>
+                                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-800 text-violet-300 border border-slate-700">DenseNet121 / VGG19</span>
+                                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-800 text-slate-300 border border-slate-700">Docker</span>
+                                </div>
+
+                                <div class="pt-4 flex flex-wrap gap-4">
+                                    <button type="button" data-modal-open="modal-thesis" class="px-5 py-2.5 rounded-xl text-sm font-semibold bg-emerald-500 hover:bg-emerald-400 text-slate-950 transition-all flex items-center space-x-2">
+                                        <i aria-hidden="true" class="fa-solid fa-circle-info"></i>
+                                        <span>Ver Detalles de la Tesis</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Demo del proyecto -->
+                            <div class="lg:col-span-5">
+                                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 text-center space-y-4">
+                                    <div class="relative w-full h-44 bg-slate-900 rounded-xl overflow-hidden border border-slate-800 flex flex-col items-center justify-center p-4">
+                                        <i aria-hidden="true" class="fa-solid fa-dharmachakra text-6xl text-slate-700 animate-spin [animation-duration:12s]"></i>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                                        <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs font-mono">
+                                            <span class="text-emerald-400"><i aria-hidden="true" class="fa-solid fa-check-circle me-1"></i>Inferencia Lista</span>
+                                            <span class="text-slate-400">DenseNet121</span>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-2 text-xs font-mono">
+                                        <div class="bg-slate-900 p-2 rounded border border-slate-800">
+                                            <span class="text-slate-400 block">Precisión:</span>
+                                            <span class="text-emerald-400 font-bold text-sm">&gt; 94.5%</span>
+                                        </div>
+                                        <div class="bg-slate-900 p-2 rounded border border-slate-800">
+                                            <span class="text-slate-400 block">Tiempo Inferencia:</span>
+                                            <span class="text-cyan-400 font-bold text-sm">~45 ms</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8 grid grid-cols-3 gap-3">
+                            <button type="button" data-lightbox="img/tesis-1.png" class="group overflow-hidden rounded-xl border border-slate-800 hover:border-emerald-500/50 focus:outline-none focus:border-emerald-500 transition-colors">
+                                <img src="img/tesis-1.png" alt="Captura 1 de la tesis" loading="lazy" class="w-full h-28 sm:h-40 object-cover group-hover:scale-105 transition-transform duration-300">
+                            </button>
+                            <button type="button" data-lightbox="img/tesis-2.png" class="group overflow-hidden rounded-xl border border-slate-800 hover:border-emerald-500/50 focus:outline-none focus:border-emerald-500 transition-colors">
+                                <img src="img/tesis-2.png" alt="Captura 2 de la tesis" loading="lazy" class="w-full h-28 sm:h-40 object-cover group-hover:scale-105 transition-transform duration-300">
+                            </button>
+                            <button type="button" data-lightbox="img/tesis-3.png" class="group overflow-hidden rounded-xl border border-slate-800 hover:border-emerald-500/50 focus:outline-none focus:border-emerald-500 transition-colors">
+                                <img src="img/tesis-3.png" alt="Captura 3 de la tesis" loading="lazy" class="w-full h-28 sm:h-40 object-cover group-hover:scale-105 transition-transform duration-300">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2 -->
+                    <div class="lg:col-span-6 glass-card rounded-2xl p-8 border border-slate-800 hover:border-emerald-500/40 transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Flutter</span>
+                                <i aria-hidden="true" class="fa-solid fa-network-wired text-slate-500 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Aplicacion en flutter</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                                Aplicación hecha en flutter para llevar un control de la calidad del sueño del usuario con control por fecha y con un registro de la información que el usuario proporcione
+                            </p>
+                            <div class="mb-6 grid grid-cols-3 gap-3">
+                                <button type="button" data-lightbox="img/pruebawebservice-1.png" class="group overflow-hidden rounded-xl border border-slate-800 hover:border-emerald-500/50 focus:outline-none focus:border-emerald-500 transition-colors">
+                                    <img src="img/pruebawebservice-1.png" alt="Captura 1 de pruebaWebService" loading="lazy" class="w-full h-20 object-cover group-hover:scale-105 transition-transform duration-300">
+                                </button>
+                                <button type="button" data-lightbox="img/pruebawebservice-2.png" class="group overflow-hidden rounded-xl border border-slate-800 hover:border-emerald-500/50 focus:outline-none focus:border-emerald-500 transition-colors">
+                                    <img src="img/pruebawebservice-2.png" alt="Captura 2 de pruebaWebService" loading="lazy" class="w-full h-20 object-cover group-hover:scale-105 transition-transform duration-300">
+                                </button>
+                                <button type="button" data-lightbox="img/pruebawebservice-3.png" class="group overflow-hidden rounded-xl border border-slate-800 hover:border-emerald-500/50 focus:outline-none focus:border-emerald-500 transition-colors">
+                                    <img src="img/pruebawebservice-3.png" alt="Captura 3 de pruebaWebService" loading="lazy" class="w-full h-20 object-cover group-hover:scale-105 transition-transform duration-300">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800/80">
+                            <a href="mailto:gaxtec@gmail.com?subject=Acceso%20al%20c%C3%B3digo%20de%20pruebaWebService" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 inline-flex items-center space-x-2">
+                                <i aria-hidden="true" class="fa-solid fa-lock"></i>
+                                <span>Código disponible bajo solicitud</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3 -->
+                    <div class="lg:col-span-6 glass-card rounded-2xl p-8 border border-slate-800 hover:border-cyan-500/40 transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-xs font-mono text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">MAUI .Net</span>
+                                <i aria-hidden="true" class="fa-solid fa-wallet text-slate-500 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Sistema de una tienda</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                                Proyecto multiplataforma elaborado con ".NET MAUI" orientado al control del inventario y las ventas además de ofrecer una gestión total para el personal registrado.
+                            </p>
+                            <div class="mb-6 grid grid-cols-3 gap-3">
+                                <button type="button" data-lightbox="img/tienda-1.png" class="group overflow-hidden rounded-xl border border-slate-800 hover:border-cyan-500/50 focus:outline-none focus:border-cyan-500 transition-colors">
+                                    <img src="img/tienda-1.png" alt="Captura 1 de tienda" loading="lazy" class="w-full h-20 object-cover group-hover:scale-105 transition-transform duration-300">
+                                </button>
+                                <button type="button" data-lightbox="img/tienda-2.png" class="group overflow-hidden rounded-xl border border-slate-800 hover:border-cyan-500/50 focus:outline-none focus:border-cyan-500 transition-colors">
+                                    <img src="img/tienda-2.png" alt="Captura 2 de tienda" loading="lazy" class="w-full h-20 object-cover group-hover:scale-105 transition-transform duration-300">
+                                </button>
+                                <button type="button" data-lightbox="img/tienda-3.png" class="group overflow-hidden rounded-xl border border-slate-800 hover:border-cyan-500/50 focus:outline-none focus:border-cyan-500 transition-colors">
+                                    <img src="img/tienda-3.png" alt="Captura 3 de tienda" loading="lazy" class="w-full h-20 object-cover group-hover:scale-105 transition-transform duration-300">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800/80">
+                            <a href="mailto:gaxtec@gmail.com?subject=Acceso%20al%20c%C3%B3digo%20de%20WhereIsMyMoney" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 inline-flex items-center space-x-2">
+                                <i aria-hidden="true" class="fa-solid fa-lock"></i>
+                                <span>Código disponible bajo solicitud</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>

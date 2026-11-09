@@ -1,0 +1,19 @@
+# Opcional: permite crear el servicio en Render como "Blueprint" (New → Blueprint)
+services:
+  - type: web
+    name: portafolio-contacto
+    runtime: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false
+      - key: MAIL_TO
+        sync: false
+      - key: TURNSTILE_SECRET
+        sync: false
+      - key: TRUST_PROXY
+        value: "true"

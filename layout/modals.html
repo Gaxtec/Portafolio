@@ -1,0 +1,41 @@
+    <!-- Modal: tesis -->
+    <div id="modal-thesis" data-modal role="dialog" aria-modal="true" aria-labelledby="modal-thesis-title" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="glass-card max-w-3xl w-full rounded-3xl border border-slate-700 p-6 sm:p-8 space-y-6 max-h-[90vh] overflow-y-auto relative">
+            <button type="button" data-modal-close aria-label="Cerrar" class="absolute top-6 right-6 text-slate-400 hover:text-white text-xl">
+                <i aria-hidden="true" class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="flex items-center space-x-2">
+                <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 font-mono text-xs">Investigación de Tesis</span>
+                <span class="text-slate-400 text-xs font-mono">Deep Learning & Visión</span>
+            </div>
+
+            <h3 id="modal-thesis-title" class="text-2xl font-bold text-white">Detector Automático de Desgaste y Defectos en Neumáticos</h3>
+
+            <div class="space-y-4 text-slate-300 text-sm leading-relaxed border-t border-b border-slate-800 py-4">
+                <h4 class="text-emerald-400 font-semibold font-mono text-xs uppercase">Resumen del Proyecto:</h4>
+                <p>
+                    Este proyecto de investigación de grado se enfocó en resolver la inspección manual propensa a errores humanos mediante un pipeline automatizado de Visión por Computadora e Inteligencia Artificial.
+                </p>
+
+                <h4 class="text-emerald-400 font-semibold font-mono text-xs uppercase">Aportes e Innovaciones Técnicas:</h4>
+                <ul class="list-disc list-inside space-y-2 text-xs text-slate-300">
+                    <li><strong>Preprocesamiento:</strong> Algoritmos de ecualización adaptativa de histograma y filtrado de ruido con OpenCV para resaltar patrones de la banda de rodadura.</li>
+                    <li><strong>Arquitectura Deep Learning:</strong> Comparación y Transfer Learning con arquitecturas <strong>DenseNet121</strong> y <strong>VGG19</strong>, alcanzando métricas de precisión superiores al 94%.</li>
+                    <li><strong>Microservicio Backend:</strong> Implementación de endpoints asíncronos en <strong>FastAPI</strong> para recibir imágenes en tiempo real y retornar diagnósticos de desgaste y tipo de defecto con bajísima latencia.</li>
+                </ul>
+            </div>
+
+            <div class="flex justify-end space-x-3">
+                <button type="button" data-modal-close class="px-5 py-2 rounded-xl text-xs font-semibold bg-slate-800 text-slate-300 hover:text-white">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: visor de capturas -->
+    <div id="modal-lightbox" data-modal role="dialog" aria-modal="true" aria-label="Visor de capturas" class="fixed inset-0 z-50 hidden bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4">
+        <button type="button" data-modal-close aria-label="Cerrar" class="absolute top-6 right-6 text-slate-300 hover:text-white text-2xl">
+            <i aria-hidden="true" class="fa-solid fa-xmark"></i>
+        </button>
+        <img id="lightbox-image" src="" alt="" class="max-w-full max-h-[85vh] rounded-xl border border-slate-700 shadow-2xl">
+    </div>

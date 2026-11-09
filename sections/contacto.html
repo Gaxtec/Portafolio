@@ -1,0 +1,107 @@
+        <!-- Contacto -->
+        <section id="contacto" class="py-24 bg-slate-950/80 border-t border-slate-800/50 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <!-- Datos de contacto -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div>
+                            <h2 class="text-xs font-mono font-semibold tracking-wider text-emerald-400 uppercase">Contacto</h2>
+                            <p class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Hablemos de tu Proyecto</p>
+                            <p class="text-slate-400 text-sm mt-3">
+                                ¿Tienes una idea, necesitas consultoría técnica para tu arquitectura backend o una solución en Visión por Computadora? Escríbeme y lo revisamos.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4 pt-4">
+                            <a href="mailto:gaxtec@gmail.com" class="glass-card p-4 rounded-xl border border-slate-800 hover:border-emerald-500/50 transition-all flex items-center space-x-4 group">
+                                <div class="w-12 h-12 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl group-hover:scale-105 transition-transform">
+                                    <i aria-hidden="true" class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-400 block font-mono">Correo Electrónico Profesional</span>
+                                    <span class="text-white font-medium text-sm sm:text-base">gaxtec@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/carlos-gadiel-peralta-peña-607a76351" target="_blank" rel="noopener noreferrer" class="glass-card p-4 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all flex items-center space-x-4 group">
+                                <div class="w-12 h-12 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl group-hover:scale-105 transition-transform">
+                                    <i aria-hidden="true" class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-400 block font-mono">Perfil Profesional</span>
+                                    <span class="text-white font-medium text-sm sm:text-base">LinkedIn / Gadiel Systems</span>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/Gaxtec" target="_blank" rel="noopener noreferrer" class="glass-card p-4 rounded-xl border border-slate-800 hover:border-violet-500/50 transition-all flex items-center space-x-4 group">
+                                <div class="w-12 h-12 rounded-lg bg-violet-500/10 text-violet-400 flex items-center justify-center text-xl group-hover:scale-105 transition-transform">
+                                    <i aria-hidden="true" class="fa-brands fa-github"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-400 block font-mono">Código Fuente & Repositorios</span>
+                                    <span class="text-white font-medium text-sm sm:text-base">GitHub / Gadiel-Dev</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Formulario -->
+                    <div class="lg:col-span-7">
+                        <div class="glass-card rounded-3xl p-8 border border-slate-800 shadow-xl">
+                            <form id="contact-form" class="space-y-5" autocomplete="on">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                    <div>
+                                        <label for="form-name" class="block text-xs font-mono text-slate-300 mb-2">Nombre Completo *</label>
+                                        <input type="text" id="form-name" name="name" required minlength="2" maxlength="80" autocomplete="name" placeholder="Tu nombre o empresa" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-500 transition-colors">
+                                    </div>
+                                    <div>
+                                        <label for="form-email" class="block text-xs font-mono text-slate-300 mb-2">Correo Electrónico *</label>
+                                        <input type="email" id="form-email" name="email" required maxlength="120" autocomplete="email" placeholder="tu@correo.com" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-500 transition-colors">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="form-subject" class="block text-xs font-mono text-slate-300 mb-2">Asunto *</label>
+                                    <input type="text" id="form-subject" name="subject" required minlength="3" maxlength="120" autocomplete="off" placeholder="Ej. Desarrollo Backend / Consultoría" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-500 transition-colors">
+                                </div>
+
+                                <div>
+                                    <label for="form-message" class="block text-xs font-mono text-slate-300 mb-2">Mensaje *</label>
+                                    <textarea id="form-message" name="message" rows="4" required minlength="10" maxlength="2000" placeholder="Describe brevemente los requerimientos de tu proyecto..." class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-500 transition-colors resize-none"></textarea>
+                                    <div class="flex items-center justify-between mt-2 text-[10px] font-mono text-slate-500">
+                                        <span>Solo texto plano. No se aceptan archivos ni código HTML.</span>
+                                        <span id="message-counter" aria-live="off">0 / 2000</span>
+                                    </div>
+                                </div>
+
+                                <!-- Campo trampa (honeypot): invisible para personas, los bots lo rellenan -->
+                                <div class="hp-field" aria-hidden="true">
+                                    <label for="form-website">No llenar este campo</label>
+                                    <input type="text" id="form-website" name="website" tabindex="-1" autocomplete="off">
+                                </div>
+
+                                <!-- Captcha (Cloudflare Turnstile): se activa si hay sitekey en js/config.js -->
+                                <div id="turnstile-container"></div>
+
+                                <button type="submit" id="submit-btn" class="w-full py-3.5 rounded-xl text-sm font-semibold bg-emerald-500 hover:bg-emerald-400 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:bg-emerald-500 text-slate-950 transition-all flex items-center justify-center space-x-2 shadow-lg shadow-emerald-500/20">
+                                    <i aria-hidden="true" class="fa-solid fa-paper-plane"></i>
+                                    <span>Enviar Mensaje</span>
+                                </button>
+                            </form>
+
+                            <!-- Mensaje de éxito -->
+                            <div id="form-alert" role="status" class="hidden mt-4 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm flex items-center space-x-3">
+                                <i aria-hidden="true" class="fa-solid fa-circle-check text-lg"></i>
+                                <span>¡Mensaje enviado! Me pondré en contacto contigo a la brevedad.</span>
+                            </div>
+
+                            <!-- Mensaje de error -->
+                            <div id="form-error" role="alert" class="hidden mt-4 p-4 rounded-xl bg-rose-500/10 border border-rose-500/30 text-rose-300 text-sm flex items-start space-x-3">
+                                <i aria-hidden="true" class="fa-solid fa-triangle-exclamation text-lg mt-0.5"></i>
+                                <span id="form-error-text"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>

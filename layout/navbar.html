@@ -1,0 +1,55 @@
+    <!-- Navegación -->
+    <nav aria-label="Principal" class="fixed top-0 left-0 w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#inicio" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-cyan-500 flex items-center justify-center text-slate-950 font-extrabold text-xl shadow-lg group-hover:scale-105 transition-transform">
+                        G
+                    </div>
+                    <div>
+                        <span class="text-lg font-bold text-white tracking-wide block leading-tight">Gadiel P.</span>
+                        <span class="text-xs text-emerald-400 font-mono font-medium tracking-widest block">SYSTEMS ENGINEER</span>
+                    </div>
+                </a>
+
+                <!-- Menú escritorio -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                    <a href="#inicio" class="hover:text-emerald-400 transition-colors py-1">Inicio</a>
+                    <a href="#sobre-mi" class="hover:text-emerald-400 transition-colors py-1">Sobre mí</a>
+                    <a href="#servicios" class="hover:text-emerald-400 transition-colors py-1">Servicios</a>
+                    <a href="#proyectos" class="hover:text-emerald-400 transition-colors py-1">Proyectos</a>
+                    <a href="#habilidades" class="hover:text-emerald-400 transition-colors py-1">Habilidades</a>
+                </div>
+
+                <!-- Botón de acción -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#contacto" class="px-5 py-2.5 rounded-xl text-sm font-semibold bg-emerald-500 hover:bg-emerald-400 text-slate-950 transition-all duration-300 shadow-md shadow-emerald-500/20 hover:shadow-emerald-500/40 hover:-translate-y-0.5">
+                        <i aria-hidden="true" class="fa-solid me-2 fa-paper-plane"></i>Contactar
+                    </a>
+                </div>
+
+                <!-- Botón menú móvil -->
+                <div class="md:hidden flex items-center">
+                    <button type="button" id="mobile-menu-btn" aria-label="Abrir menú" aria-controls="mobile-menu" aria-expanded="false" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/80 focus:outline-none">
+                        <i id="menu-icon" aria-hidden="true" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="hidden md:hidden glass-card border-t border-slate-800/80 px-4 pt-3 pb-6 space-y-3">
+            <a href="#inicio" class="mobile-link block px-3 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-emerald-400 font-medium">Inicio</a>
+            <a href="#sobre-mi" class="mobile-link block px-3 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-emerald-400 font-medium">Sobre mí</a>
+            <a href="#servicios" class="mobile-link block px-3 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-emerald-400 font-medium">Servicios</a>
+            <a href="#proyectos" class="mobile-link block px-3 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-emerald-400 font-medium">Proyectos</a>
+            <a href="#habilidades" class="mobile-link block px-3 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-emerald-400 font-medium">Habilidades</a>
+            <a href="#contacto" class="mobile-link block px-3 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-emerald-400 font-medium">Contacto</a>
+            <div class="pt-2">
+                <a href="#contacto" class="mobile-link block text-center w-full px-5 py-2.5 rounded-xl text-sm font-semibold bg-emerald-500 text-slate-950">
+                    Contactar
+                </a>
+            </div>
+        </div>
+    </nav>
