@@ -168,7 +168,7 @@ function showToast(message) {
 
 function initCvDownload() {
     $(UI_SELECTORS.downloadCvButton).addEventListener('click', () => {
-        showToast('Iniciando descarga de CV_Gadiel.pdf...');
+        showToast('Descargando CV...'); // el navegador hace la descarga por el atributo download del enlace
     });
 }
 
