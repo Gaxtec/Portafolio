@@ -3,7 +3,7 @@
 ## Estructura
 
 ```
-index.html         La estructura principal
+index.html          La estructura principal
 build.py            ← ensambla index.html con las partes de abajo
 layout/             head, navbar, modals, footer, scripts
 sections/           inicio, sobre-mi, servicios, proyectos, habilidades, contacto
