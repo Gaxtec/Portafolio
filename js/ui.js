@@ -16,7 +16,7 @@ const UI_SELECTORS = {
     lightboxImage: '#lightbox-image',
     filterButton: '[data-filter]',
     skillCard: '.skill-card',
-    downloadCvButton: '#download-cv-btn',
+    cvDownload: '[data-cv-download]',
     typingText: '#typing-text'
 };
 
@@ -167,8 +167,11 @@ function showToast(message) {
 }
 
 function initCvDownload() {
-    $(UI_SELECTORS.downloadCvButton).addEventListener('click', () => {
-        showToast('Descargando CV...'); // el navegador hace la descarga por el atributo download del enlace
+    $$(UI_SELECTORS.cvDownload).forEach((link) => {
+        link.addEventListener('click', () => {
+            // el navegador hace la descarga por el atributo download del enlace
+            showToast(link.hreflang === 'en' ? 'Downloading CV...' : 'Descargando CV...');
+        });
     });
 }
 
